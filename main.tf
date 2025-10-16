@@ -11,6 +11,10 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+assume_role {
+    role_arn     = "arn:aws:iam::<YOUR_ACCOUNT_ID>:role/TerraformCloudRole"
+    session_name = "terraform-cloud"
+  }
 }
 
 resource "aws_s3_bucket" "this" {
