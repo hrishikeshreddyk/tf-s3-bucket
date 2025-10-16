@@ -12,7 +12,7 @@ terraform {
 provider "aws" {
   region = var.aws_region
 assume_role {
-    role_arn     = "arn:aws:iam::<YOUR_ACCOUNT_ID>:role/TerraformCloudRole"
+    role_arn     = "arn:aws:iam::573636634543:role/TerraformCloudRole"
     session_name = "terraform-cloud"
   }
 }
