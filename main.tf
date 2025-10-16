@@ -16,9 +16,6 @@ provider "aws" {
 resource "aws_s3_bucket" "this" {
   bucket = var.bucket_name
 
-  # Block public ACLs/Policy (AWS best practice)
-  acl = "private"
-
   tags = merge(var.tags, { ManagedBy = "TerraformCloud" })
 }
 
