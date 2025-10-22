@@ -11,7 +11,8 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"   # Change this to your preferred AWS region
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_access_key
+  assume_role {
+    role_arn = "arn:aws:iam::573636634543:role/terraform_role"
+}
 
 }
