@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"   # Change this to your preferred AWS region
+  region = "us-west-2"   # Change this to your preferred AWS region
   assume_role {
     role_arn = "arn:aws:iam::573636634543:role/terraform_role"
 }
