@@ -1,6 +1,6 @@
 
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "my-unique-s3-bucket-name-12345"  # Must be globally unique
+  bucket = "hrishikesh-terraform-bucket-2025-10-22"  # Must be globally unique
   acl    = "private"  # Access control: private | public-read | etc.
 
   tags = {
